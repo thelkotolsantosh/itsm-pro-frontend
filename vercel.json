@@ -1,8 +1,20 @@
 {
   "rewrites": [
     {
+      "source": "/api/ai/:path*",
+      "destination": "https://itsm-pro-backend-production.up.railway.app/api/ai/:path*"
+    },
+    {
+      "source": "/api/topology/:path*",
+      "destination": "https://itsm-pro-backend-production.up.railway.app/api/topology/:path*"
+    },
+    {
+      "source": "/api/topology",
+      "destination": "https://itsm-pro-backend-production.up.railway.app/api/topology"
+    },
+    {
       "source": "/api/:path*",
-      "destination": "https://itsm-pro-backend-production.up.railway.app/api/:path*"
+      "destination": "https://itsm-pro-backend-production.up.railway.app/:path*"
     },
     {
       "source": "/((?!api/).*)",
